@@ -1,22 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="FR">
+    <!-- En-tête de la page -->
     <head>
+        <meta charset="utf-8" />
         <title>Projet 2 - site web Reservia</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
     </head>
+    <!-- website menu -->
     <header>
-        
+        <h1 class="titleWebsite">Reservia</h1>
+        <ul class="website_menu">
+            <li><a href="#Hebergements">Hébergements</a></li>
+            <li><a href="yahoo.fr">Activités</a></li>
+            <li><a href="ecosia.com">S'inscrire</a></li>
+        </ul>
     </header>
-
-
-
+    <!-- Corps de la page -->
     <body>
-        <h1>Un super titre!</h1>
-        <p>Alors ici je vais commencer le site Reservia d'une agence de reservation d'hebergement et activités</p>
+        <section class="search_by_city">
+            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+            <p>En plein centre ville ou en pleine nature</p>
+            <form method="POST" action="www.google.com">
+                <img class="fit-picture"
+                src="https://yari-demos.prod.mdn.mozit.cloud/fr/docs/Web/HTML/Element/Img/favicon144.png"
+                alt="Grapefruit slice atop a pile of other slices" sizes="20px, 90px">
+                <input type="text" name="villeEtPaysResearch"/>
+                <input type="submit" value="Rechercher" />
+            </form>
+        </section>
+        <section class="filters">
+            <p>Filtres</p>
+            <ul class="filters">
+                <li><img src="favicon1.png" alt="logo_economique"><a href="#Hebergements">Economique</a></li>
+                <li><img src="favicon2.png" alt="logo_familial"><a href="yahoo.fr">Familial</a></li>
+                <li><img src="favicon3.png" alt="logo_Romantique"><a href="ecosia.com">Romantique</a></li>
+                <li><img src="favicon4.png" alt="logo_animaux_autorises"><a href="ecosia.com">Animaux autorisés</a></li>
+            </ul>
+        </section>
+        <p><img src="favicon5" alt="logo_info"> Plus de 500 logements sont disponibles dans cette ville</p>
+        <p>ici trois grand carrée, avec chacun avec leurs petits carré.</p>
+        <br/><br/><br/><br/><br/><br/>
+        <p id="Hebergements"></p>id="Hebergements">
+        <p id="Activites"></p>id="Activites">
     </body>
-
-
     <footer>
-        <p>All rights reserved. Saidkhaj. 28 August 2021</p>
+        <ul>
+            <li>A propos</li>
+            <li>Fonctionnement du site</li>
+            <li>Conditions générales du site</li>
+            <li>Données et confidentialité</li>
+        </ul>
+        <ul>
+            <li>Nos hébergements</li>
+            <li>Charte qualité</li>
+            <li>Soumettre votre hôtel</li>
+        </ul>
+        <ul>
+            <li>Assistance</li>
+            <li>Centre d'aide</li>
+            <li>Nous contacter</li>
+        </ul>
     </footer>
 </html>
